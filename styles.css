@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #fcf7f1 0%, var(--bg) 100%);
   line-height: 1.6;
@@ -49,7 +49,7 @@ img {
 }
 
 .brand {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--text);
@@ -96,7 +96,7 @@ img {
 .section-intro h2,
 .about h2,
 .contact h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   line-height: 1.1;
   margin: 0 0 1rem;
 }
@@ -302,4 +302,26 @@ img {
   .contact-box {
     padding: 1.25rem;
   }
+}
+.contact-buttons {
+  display: flex;
+  gap: 15px; /* Adds space between the buttons */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.whatsapp-btn {
+  background-color: #25d366; /* Official WhatsApp green */
+  color: white;
+}
+.contact-buttons {
+  display: flex;
+  gap: 15px; /* Adds space between the buttons */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.whatsapp-btn {
+  background-color: #25d366; /* Official WhatsApp green */
+  color: white;
 }
