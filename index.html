@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aziz & Mohamed Interiors | Portfolio</title>
+    <meta
+      name="description"
+      content="A luxury interior catalog structured by category, featuring sculptural tables, lighting, and decorative objects."
+    />
+    <title>Aziz & Mohamed Interiors | Catalog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,165 +19,353 @@
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="#">Aziz & Mohamed Interiors</a>
-        <nav class="nav-links">
-          <a href="#portfolio">Portfolio</a>
-          <a href="#about">About</a>
+        <a class="brand" href="#top">
+          <span>Aziz & Mohamed</span>
+          <small>Interior Atelier</small>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#tables">Tables</a>
+          <a href="#lighting">Lighting</a>
+          <a href="#decor">Decor</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
-        <div class="container hero-content">
+        <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Interior design portfolio</p>
-            <h1>Refined spaces that feel both timeless and personal.</h1>
+            <p class="eyebrow">Curated collection</p>
+            <h1>High-fashion interiors, catalogued with precision and poise.</h1>
             <p>
-              We create warm, sculptural interiors with bespoke lighting, custom
-              furniture, and a curated balance of texture and light.
+              Discover sculptural tables, luminous lighting, and collector-worthy
+              accents designed to bring elegance to every room.
             </p>
-            <a class="btn" href="#portfolio">Explore projects</a>
+            <div class="hero-actions">
+              <a class="btn" href="#tables">Browse tables</a>
+              <a class="btn btn-secondary" href="#lighting">Explore lighting</a>
+            </div>
           </div>
-          <div class="hero-card">
-            <img
-              src="images/3%20Glob%20gold.jpg"
-              alt="Luxury interior with golden lighting details"
-            />
-            <div class="hero-card-content">
-              <h2>Signature residential styling</h2>
-              <p>Elevated detail, rich materiality, and inviting comfort.</p>
+          <div class="hero-feature">
+            <img src="images/lighting/three-glob-gold-pendant.jpg" alt="Three-globe gold pendant in a luxe interior" loading="eager" />
+            <div class="hero-card">
+              <span>Featured item</span>
+              <strong>Three-Globe Pendant</strong>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio">
+      <section class="catalog-intro">
         <div class="container">
-          <div class="section-intro">
-            <p class="eyebrow">Selected work</p>
-            <h2>Modern interiors shaped by light, line, and texture.</h2>
-            <p>
-              Every composition is designed to feel calm, intimate, and highly
-              functional for everyday living.
-            </p>
+          <p class="eyebrow">Editorial catalogue</p>
+          <h2>Structured by category, composed for effortless discovery.</h2>
+        </div>
+      </section>
+
+      <section class="category-section" id="tables">
+        <div class="category-container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Tables</p>
+              <h2>Quiet luxury for gathering, dining, and lingering.</h2>
+            </div>
+            <p class="section-description">Sculptural silhouettes in warm wood, brass, marble, and glass.</p>
           </div>
 
-          <div class="gallery-grid">
-            <article class="card card-large">
-              <img
-                src="images/3%20Glob%20gold.jpg"
-                alt="Golden-toned interior lighting feature"
-              />
-              <div class="card-body">
-                <h3>Golden Hour Lounge</h3>
-                <p>
-                  Soft glow, sculptural lighting, and a polished lounge
-                  atmosphere.
-                </p>
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="images/tables/gold-side-table.jpg" alt="Gold side table with sculptural metal base" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Gold Side Table</h3>
+                  <p>Brushed brass frame · sculptural profile</p>
+                </div>
               </div>
             </article>
 
-            <article class="card">
-              <img
-                src="images/Glob%20a%203s.jpg"
-                alt="Curved decorative lighting installation"
-              />
-              <div class="card-body">
-                <h3>Curved Glow</h3>
-                <p>A contemporary focal piece for a refined evening setting.</p>
+            <article class="product-card">
+              <img src="images/tables/oak-coffee-table.jpg" alt="Oak coffee table with smooth contemporary form" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Oak Coffee Table</h3>
+                  <p>Solid oak · understated presence</p>
+                </div>
               </div>
             </article>
 
-            <article class="card">
-              <img
-                src="images/Lustre%20GLOP.jpg"
-                alt="Crystal chandelier in a dining space"
-              />
-              <div class="card-body">
-                <h3>Crystal Dining</h3>
-                <p>
-                  Layered sparkle and elegant geometry for intimate
-                  entertaining.
-                </p>
-              </div>
-            </article>
-
-            <article class="card">
-              <img
-                src="images/Lustre%20en%20cristal.jpg"
-                alt="Contemporary crystal chandelier"
-              />
-              <div class="card-body">
-                <h3>Crystal Statement</h3>
-                <p>Balanced luxury with a light, airy visual rhythm.</p>
-              </div>
-            </article>
-
-            <article class="card">
-              <img
-                src="images/Table%20a%203.jpg"
-                alt="Sculptural wooden table in a modern home"
-              />
-              <div class="card-body">
-                <h3>Material Study</h3>
-                <p>
-                  Warm wood and clean silhouettes for a timeless family table.
-                </p>
-              </div>
-            </article>
-
-            <article class="card">
-              <img
-                src="images/Table%20a%20Glass.jpg"
-                alt="Glass table in a contemporary interior"
-              />
-              <div class="card-body">
-                <h3>Glass & Grain</h3>
-                <p>A soft contrast of transparency and natural texture.</p>
+            <article class="product-card">
+              <img src="images/tables/glass-top-table.jpg" alt="Glass top table in a modern interior" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Glass Top Table</h3>
+                  <p>Refined transparency · airy composition</p>
+                </div>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="about" class="about">
-        <div class="container about-content">
-          <div>
-            <p class="eyebrow">About the studio</p>
-            <h2>Designed to feel effortless, elevated, and deeply livable.</h2>
-            <p>
-              Our approach blends architectural clarity with rich materials to
-              create interiors that connect beauty with everyday comfort.
-            </p>
+      <section class="category-section alt" id="lighting">
+        <div class="category-container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Lustres & lighting</p>
+              <h2>Layered glow, sculptural form, and architectural presence.</h2>
+            </div>
+            <p class="section-description">Statement pendants and chandeliers designed for intimate drama.</p>
           </div>
-          <div class="stats">
+
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="images/lighting/three-glob-gold-pendant.jpg" alt="Three-globe gold pendant" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Three-Globe Pendant</h3>
+                  <p>Gold finish · warm ambient glow</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/crystal-chandelier.jpg" alt="Crystal chandelier with elegant branching form" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Crystal Chandelier</h3>
+                  <p>Hand-cut crystal · luminous centerpiece</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/led-circle-lustre.jpg" alt="Round LED lounge chandelier" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Circle LED Luster</h3>
+                  <p>Modern glow · precise illumination</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/led-circle-lustre-alt.jpg" alt="Alternative LED circle chandelier" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Circle LED Variant</h3>
+                  <p>Contemporary glow · tailored finish</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/blog-lustre-3.jpg" alt="Editorial blog-style chandelier" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Blog Luster</h3>
+                  <p>Soft silhouette · sculptural rhythm</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/crystal-pendant.jpg" alt="Crystal pendant with graceful form" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Crystal Pendant</h3>
+                  <p>Facet detail · intimate light</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/globular-pendant.jpg" alt="Rounded pendant in polished metal" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Globular Pendant</h3>
+                  <p>Rounded form · refined finish</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/luxe-blog-pendant.jpg" alt="Luxe pendant with editorial presence" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Luxe Blog Pendant</h3>
+                  <p>Architectural presence · warm glow</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/sculptural-globe-lamp.jpg" alt="Sculptural globe lamp" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Sculptural Globe Lamp</h3>
+                  <p>Statement light · refined silhouette</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/lighting/suspension-anneaux.jpg" alt="Suspension light with ring detail" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Suspension Anneaux</h3>
+                  <p>Ring detail · layered illumination</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section" id="decor">
+        <div class="category-container">
+          <div class="section-heading">
             <div>
-              <strong>12+</strong>
-              <span>Years of experience</span>
+              <p class="eyebrow">Other collections</p>
+              <h2>Collector accents that complete the narrative.</h2>
             </div>
-            <div>
-              <strong>40</strong>
-              <span>Luxury projects</span>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <span>Bespoke detailing</span>
-            </div>
+            <p class="section-description">Decor pieces with a tactile, editorial sensibility.</p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="images/decor/accent-decor-01.jpg" alt="Decorative object styled in a refined interior" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Accent Object</h3>
+                  <p>Textural statement piece</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-02.jpg" alt="Decorative object in an editorial setting" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Curated Accent</h3>
+                  <p>Layered presence · warm palette</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-03.jpg" alt="Decorative object with refined silhouette" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Quiet Form</h3>
+                  <p>Minimal shape · elevated texture</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-04.jpg" alt="Layered sculptural decor element" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Form Study</h3>
+                  <p>Material-led composition</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-04-alt.jpg" alt="Alternative sculptural decor detail" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Form Study II</h3>
+                  <p>Soft contrast · tonal balance</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-05.jpg" alt="Decorative composition with warm tones" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Material Accent</h3>
+                  <p>Warm neutral palette</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-05-alt.jpg" alt="Alternative warm-toned decor composition" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Material Accent II</h3>
+                  <p>Refined texture · sculptural emphasis</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-06.jpg" alt="Decorative statement object" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Statement Object</h3>
+                  <p>Editorial finishing touch</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-07.jpg" alt="Decorative interior styling piece" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Editorial Accent</h3>
+                  <p>Quiet luxury finishing touch</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-08.jpg" alt="Decorative piece styled with soft contrast" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Soft Contrast</h3>
+                  <p>Fine detailing · ordered balance</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-09.jpg" alt="Decorative object in elevated composition" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Elevated Composition</h3>
+                  <p>Refined presence · sculptural finish</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="images/decor/accent-decor-09-alt.jpg" alt="Alternative decorative object in elevated composition" loading="lazy" />
+              <div class="product-meta">
+                <div>
+                  <h3>Elevated Composition II</h3>
+                  <p>Elegant texture · collector appeal</p>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section id="contact" class="contact">
         <div class="container contact-box">
-          <h2>Let’s shape a space that feels unmistakably yours.</h2>
-      <div class="contact-buttons">
-        <a class="btn" href="mohamedaitossouna@gmail.com">Send an Email</a>
-        <a class="btn whatsapp-btn" href="https://wa.me/212664106467" target="_blank">Chat on WhatsApp</a>
-      </div>
-            >Start a conversation</a
-          >
+          <div>
+            <p class="eyebrow">Private consultations</p>
+            <h2>Let’s shape a collection that feels unmistakably yours.</h2>
+          </div>
+          <div class="contact-buttons">
+            <a class="btn" href="mailto:mohamedaitossouna@gmail.com">Email the studio</a>
+            <a class="btn whatsapp-btn" href="https://wa.me/212664106467" target="_blank" rel="noreferrer">Message on WhatsApp</a>
+          </div>
         </div>
       </section>
     </main>
