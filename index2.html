@@ -1,110 +1,299 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Home Goods Shop</title>
-    <!-- Tailwind CSS for rapid styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Aziz & Mohamed - Interior Atelier</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-stone-50 text-stone-800 font-sans">
-    <!-- Header Navigation -->
-    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
-      <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <!-- The brand name should only be here once -->
-        <h1 class="text-2xl font-bold tracking-wide text-stone-900">
-          MOHAMED & AZIZ
-        </h1>
-
-        <nav class="space-x-reverse space-x-6 font-medium">
-          <a href="#catalog" class="hover:text-amber-700 transition"
-            >المعروضات</a
-          >
-          <a href="#about" class="hover:text-amber-700 transition">قصتنا</a>
-          <a href="#contact" class="hover:text-amber-700 transition"
-            >اتصل بنا</a
-          >
-        </nav>
+  <body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="logo">Aziz & Mohamed</div>
+      <nav>
+        <ul>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="lighting.html">Lighting</a></li>
+          <li><a href="decor.html">Decor</a></li>
+        </ul>
+      </nav>
+      <div class="header-contact">
+        <a
+          href="https://wa.me/212664106467"
+          target="_blank"
+          class="contact-btn whatsapp-btn"
+        >
+          💬 WhatsApp
+        </a>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-stone-900 text-white py-32 px-6 text-center">
-      <!-- Optional: You can add an image background later -->
-      <div class="max-w-3xl mx-auto relative z-10">
-        <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">
-          Decoration D'interieur
-        </h2>
-        <p class="text-stone-300 text-lg mb-8">
-          طاولات وديكورات منزلية فاخرة ومصنوعة حسب الطلب لتدوم مدى الحياة.
-        </p>
-        <a
-          href="#catalog"
-          class="bg-amber-700 hover:bg-amber-800 text-white font-semibold px-8 py-3 rounded-md transition duration-300"
-        >
-          تصفح التشكيلة
-        </a>
-      </div>
-    </section>
+    <main>
+      <section class="hero-section">
+        <h1>Curated Interior Atelier</h1>
+        <p>Handcrafted luxury furniture, lighting, and decor.</p>
+      </section>
 
-    <!-- Product Catalog Section -->
-    <section id="catalog" class="max-w-7xl mx-auto px-6 py-20" dir="rtl">
-      <!-- Section Title in Arabic -->
-      <h3
-        class="text-3xl font-serif font-bold text-center mb-12 text-stone-950"
-      >
-        المعروضات المميزة
-      </h3>
-
-      <!-- Clean, Fixed Right-to-Left Product Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Item Card 1 -->
-        <div
-          class="bg-white rounded-lg overflow-hidden shadow-sm border border-stone-200 flex flex-col"
-        >
-          <!-- Image Placeholder -->
-          <!-- Real Product Image -->
-          <div class="h-72 overflow-hidden bg-stone-100">
+      <!-- Category Highlight Cards -->
+      <section class="categories-grid">
+        <div class="collection-card">
+          <a href="tables.html">
             <img
-              src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=800&q=80"
-              alt="طاولة طعام"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              src="images/tables/oak-coffee-table.jpg"
+              alt="Tables Collection"
             />
-            </div>
-
-          <!-- Content Box -->
-          <div class="p-6 flex flex-col flex-grow text-right">
-            <h4 class="text-xl font-bold text-stone-900 mb-2">
-              طاولة طعام خشبية مميزة
-            </h4>
-            </div> 
-             
-            <p class="text-stone-600 text-sm mb-6 leading-relaxed">
-              طاولة أنيقة بتصميم عصري وجودة عالية، مثالية لغرفة المعيشة أو
-              صالونك. متوفرة بمقاسات مختلفة حسب الطلب.
-            </p>
-
-            <!-- Price and Button Box -->
-            <div
-              class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100"
-            >
-              <span class="text-lg font-bold text-stone-900">1500 درهم</span>
-              <!-- Custom WhatsApp Pre-filled Link -->
-              <a
-                href="https://wa.me/212XXXXXXXXX?text=سلام%20عليكم،%20أنا%20مهتم%20بطاولة%20الطعام%20الخشبية"
-                target="_blank"
-                class="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded transition flex items-center"
-              >
-                اطلب عبر الواتساب
-              </a>
-            </div>
-          </div>
+            <h3>Tables & Storage &rarr;</h3>
+          </a>
         </div>
 
-        <!-- You can safely duplicate the exact block above to add Item 2 and Item 3 later! -->
+        <div class="collection-card">
+          <a href="lighting.html">
+            <img
+              src="images/lighting/glob-kitchen.png"
+              alt="Lighting Collection"
+            />
+            <h3>Lighting &rarr;</h3>
+          </a>
+        </div>
+
+        <div class="collection-card">
+          <a href="decor.html">
+            <img
+              src="images/decor/accent-decor-01.jpg"
+              alt="Decor Collection"
+            />
+            <h3>Decor &rarr;</h3>
+          </a>
+        </div>
+      </section>
+
+      <!-- Complete Catalog -->
+      <section class="catalog-container">
+        <h2>Complete Collection</h2>
+
+        <div class="product-grid">
+          <!-- LIGHTING ITEMS -->
+          <article class="product-card">
+            <img
+              src="images/lighting/glob-kitchen.png"
+              alt="Globular Pendant Light"
+            />
+            <div class="product-meta">
+              <h3>Globular Pendant Light</h3>
+              <p>Lighting</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/lighting/three-golden-glob.png"
+              alt="Three-Globe Gold Pendant"
+            />
+            <div class="product-meta">
+              <h3>Three-Globe Gold Pendant</h3>
+              <p>Lighting</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/lighting/three-g-glob.png"
+              alt="Suspension Anneaux Ring Light"
+            />
+            <div class="product-meta">
+              <h3>Suspension Anneaux Ring Light</h3>
+              <p>Lighting</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/lighting/crystal-pendant.jpg"
+              alt="Classic Crystal Chandelier"
+            />
+            <div class="product-meta">
+              <h3>Classic Crystal Chandelier</h3>
+              <p>Lighting</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/lighting/modern-gold-ring-pendant-light.jpg"
+              alt="Modern Gold Ring Pendant"
+            />
+            <div class="product-meta">
+              <h3>Modern Gold Ring Pendant</h3>
+              <p>Lighting</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/lighting/gold-diamond-crystal-chandelier.jpg"
+              alt="Diamond Crystal Chandelier"
+            />
+            <div class="product-meta">
+              <h3>Diamond Crystal Chandelier</h3>
+              <p>Lighting</p>
+            </div>
+          </article>
+
+          <!-- TABLES ITEMS -->
+          <article class="product-card">
+            <img
+              src="images/tables/oak-coffee-table.jpg"
+              alt="Oak Coffee Table"
+            />
+            <div class="product-meta">
+              <h3>Oak Coffee Table</h3>
+              <p>Tables & Storage</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/tables/gold-side-table.jpg"
+              alt="Gold Metal Side Table"
+            />
+            <div class="product-meta">
+              <h3>Gold Metal Side Table</h3>
+              <p>Tables & Storage</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/tables/glass-top-table.jpg"
+              alt="Glass-Top Accent Table"
+            />
+            <div class="product-meta">
+              <h3>Glass-Top Accent Table</h3>
+              <p>Tables & Storage</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/tables/minimalist-walnut-sideboard.jpg"
+              alt="Minimalist Walnut Sideboard"
+            />
+            <div class="product-meta">
+              <h3>Minimalist Walnut Sideboard</h3>
+              <p>Tables & Storage</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/tables/modern-wooden-shoe-cabinet.jpg"
+              alt="Modern Wooden Shoe Cabinet"
+            />
+            <div class="product-meta">
+              <h3>Modern Wooden Shoe Cabinet</h3>
+              <p>Tables & Storage</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/tables/gold-circle-credenza-sideboard.jpg"
+              alt="Gold Circle Credenza"
+            />
+            <div class="product-meta">
+              <h3>Gold Circle Credenza</h3>
+              <p>Tables & Storage</p>
+            </div>
+          </article>
+
+          <!-- DECOR ITEMS -->
+          <article class="product-card">
+            <img
+              src="images/decor/accent-decor-01.jpg"
+              alt="Sculptural Decor Piece 01"
+            />
+            <div class="product-meta">
+              <h3>Sculptural Decor Piece 01</h3>
+              <p>Decor</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/decor/accent-decor-02.jpg"
+              alt="Sculptural Decor Piece 02"
+            />
+            <div class="product-meta">
+              <h3>Sculptural Decor Piece 02</h3>
+              <p>Decor</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/decor/accent-decor-03.jpg"
+              alt="Minimalist Table Vessel"
+            />
+            <div class="product-meta">
+              <h3>Minimalist Table Vessel</h3>
+              <p>Decor</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/decor/accent-decor-05.jpg"
+              alt="Modern Accent Object"
+            />
+            <div class="product-meta">
+              <h3>Modern Accent Object</h3>
+              <p>Decor</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/decor/accent-decor-07.jpg"
+              alt="Artisan Ceramic Sculpture"
+            />
+            <div class="product-meta">
+              <h3>Artisan Ceramic Sculpture</h3>
+              <p>Decor</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/decor/accent-decor-08.jpg"
+              alt="Luxury Table Accent"
+            />
+            <div class="product-meta">
+              <h3>Luxury Table Accent</h3>
+              <p>Decor</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Contact Section -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h3>Get in Touch</h3>
+        <p>
+          Have custom design inquiries or catalog questions? Reach out directly
+          on WhatsApp:
+        </p>
+        <div class="footer-links">
+          <a href="https://wa.me/212664106467" target="_blank"
+            >📱 Chat on WhatsApp (+212 664-106467)</a
+          >
+        </div>
+        <p class="copyright">
+          &copy; 2026 Aziz & Mohamed Interior Atelier. All rights reserved.
+        </p>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
