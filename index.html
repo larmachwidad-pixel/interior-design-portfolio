@@ -1,235 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aziz & Mohamed - Interior Atelier</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <!-- Navigation Header -->
-  <header class="navbar">
-    <div class="logo">Aziz & Mohamed</div>
-    <nav>
-      <ul>
-        <li><a href="tables.html">Tables</a></li>
-        <li><a href="lighting.html">Lighting</a></li>
-        <li><a href="decor.html">Decor</a></li>
-      </ul>
-    </nav>
-    <div class="header-contact">
-      <a href="https://wa.me/212664106467" target="_blank" class="contact-btn whatsapp-btn">
-        💬 WhatsApp: 0664106467
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decoration D'interieur - Marrakech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+      <div class="top-info-left">
+        <span
+          ><i class="ri-phone-line"></i>
+          <a href="tel:0664106467">0664106467</a></span
+        >
+        <span><i class="ri-map-pin-line"></i> Hay Hassani, Marrakech</span>
+      </div>
+      <div class="top-info-right">
+        <span
+          ><i class="ri-time-line"></i> Open Daily: 10:00 AM - 8:30 PM (Closed
+          Friday)</span
+        >
+      </div>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <main>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo-container">
+          <a href="index.html" class="brand-logo">
+            <span class="logo-text">DECORATION D'INTERIEUR</span>
+          </a>
+        </div>
+
+        <div class="header-actions">
+          <a href="tel:0664106467" aria-label="Call Us"
+            ><i class="ri-phone-line"></i
+          ></a>
+          <a href="#" aria-label="Account"><i class="ri-user-3-line"></i></a>
+          <a href="#" aria-label="Wishlist"><i class="ri-heart-3-line"></i></a>
+          <a href="#" class="bag-link" aria-label="Bag">
+            <i class="ri-shopping-bag-3-line"></i>
+            <span class="bag-text">Bag 0</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Navigation Bar -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">HOME</a>
+        <a href="tables.html" class="nav-link">TABLES & CREDENZAS</a>
+        <a href="lighting.html" class="nav-link">LIGHTING & CHANDELIERS</a>
+        <a href="new-arrivals.html" class="nav-link">NEW ARRIVALS</a>
+        <a href="#store-location" class="nav-link">STORE LOCATION</a>
+        <a href="tel:0664106467" class="nav-link">CONTACT US</a>
+      </nav>
+    </header>
+
+    <!-- Hero Banner -->
     <section class="hero-section">
-      <h1>Curated Interior Atelier</h1>
-      <p>Handcrafted luxury furniture, lighting, and decor.</p>
-    </section>
-
-    <!-- Category Highlight Cards -->
-    <section class="categories-grid">
-      <div class="collection-card">
-        <a href="tables.html">
-          <img src="images/tables/oak-coffee-table.jpg" alt="Tables Collection" />
-          <h3>Tables & Storage &rarr;</h3>
-        </a>
+      <div class="hero-image-wrapper">
+        <img
+          src="images/lighting/glob-kitchen.png"
+          alt="Decoration D'interieur"
+          class="hero-bg"
+        />
       </div>
-
-      <div class="collection-card">
-        <a href="lighting.html">
-          <img src="images/lighting/glob-kitchen.png" alt="Lighting Collection" />
-          <h3>Lighting &rarr;</h3>
-        </a>
-      </div>
-
-      <div class="collection-card">
-        <a href="decor.html">
-          <img src="images/decor/accent-decor-01.jpg" alt="Decor Collection" />
-          <h3>Decor &rarr;</h3>
-        </a>
+      <div class="hero-overlay">
+        <h1 class="hero-title">DECORATION D'INTERIEUR</h1>
+        <p class="hero-subtitle">HAY HASSANI - MARRAKECH</p>
+        <a href="new-arrivals.html" class="hero-btn">DISCOVER COLLECTION</a>
       </div>
     </section>
 
-    <!-- Complete Catalog -->
-    <section class="catalog-container">
-      <h2>Complete Collection</h2>
-      
-      <div class="product-grid">
+    <!-- Location & Contact Section -->
+    <section class="location-section" id="store-location">
+      <div class="location-container">
+        <div class="location-details">
+          <h2>VISIT OUR STORE</h2>
+          <p>
+            <i class="ri-map-pin-fill"></i> <strong>Address:</strong> Hay
+            Hassani, Marrakesh 40130, Morocco
+          </p>
+          <!-- Top Info Bar -->
+          <span
+            ><i class="ri-whatsapp-line"></i>
+            <a href="https://wa.me/212664106467" target="_blank"
+              >0664106467</a
+            ></span
+          >
 
-        <!-- LIGHTING ITEMS -->
-        <article class="product-card">
-          <img src="images/lighting/glob-kitchen.png" alt="Globular Pendant Light" />
-          <div class="product-meta">
-            <h3>Globular Pendant Light</h3>
-            <p>Lighting</p>
-          </div>
-        </article>
+          <!-- Store Details Section -->
+          <p>
+            <i class="ri-whatsapp-fill"></i> <strong>WhatsApp:</strong>
+            <a href="https://wa.me/212664106467" target="_blank"
+              >06 64 10 64 67</a
+            >
+          </p>
 
-        <article class="product-card">
-          <img src="images/lighting/three-golden-glob.png" alt="Three-Globe Gold Pendant" />
-          <div class="product-meta">
-            <h3>Three-Globe Gold Pendant</h3>
-            <p>Lighting</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/lighting/three-g-glob.png" alt="Suspension Anneaux Ring Light" />
-          <div class="product-meta">
-            <h3>Suspension Anneaux Ring Light</h3>
-            <p>Lighting</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/lighting/crystal-pendant.jpg" alt="Classic Crystal Chandelier" />
-          <div class="product-meta">
-            <h3>Classic Crystal Chandelier</h3>
-            <p>Lighting</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/lighting/modern-gold-ring-pendant-light.jpg" alt="Modern Gold Ring Pendant" />
-          <div class="product-meta">
-            <h3>Modern Gold Ring Pendant</h3>
-            <p>Lighting</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/lighting/modern-gold-ring-pendant-light-inst.jpg" alt="Gold Ring Pendant Installation" />
-          <div class="product-meta">
-            <h3>Gold Ring Pendant Installation</h3>
-            <p>Lighting</p>
-          </div>
-        </article>
-
-        <!-- TABLES ITEMS -->
-        <article class="product-card">
-          <img src="images/tables/oak-coffee-table.jpg" alt="Oak Coffee Table" />
-          <div class="product-meta">
-            <h3>Oak Coffee Table</h3>
-            <p>Tables & Storage</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/tables/gold-side-table.jpg" alt="Gold Metal Side Table" />
-          <div class="product-meta">
-            <h3>Gold Metal Side Table</h3>
-            <p>Tables & Storage</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/tables/glass-top-table.jpg" alt="Glass-Top Accent Table" />
-          <div class="product-meta">
-            <h3>Glass-Top Accent Table</h3>
-            <p>Tables & Storage</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/tables/minimalist-walnut-sideboard.jpg" alt="Minimalist Walnut Sideboard" />
-          <div class="product-meta">
-            <h3>Minimalist Walnut Sideboard</h3>
-            <p>Tables & Storage</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/tables/modern-wooden-shoe-cabinet.jpg" alt="Modern Wooden Shoe Cabinet" />
-          <div class="product-meta">
-            <h3>Modern Wooden Shoe Cabinet</h3>
-            <p>Tables & Storage</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/tables/gold-circle-credenza-sideboard.jpg" alt="Gold Circle Credenza" />
-          <div class="product-meta">
-            <h3>Gold Circle Credenza</h3>
-            <p>Tables & Storage</p>
-          </div>
-        </article>
-
-        <!-- DECOR ITEMS -->
-        <article class="product-card">
-          <img src="images/decor/accent-decor-01.jpg" alt="Sculptural Decor Piece 01" />
-          <div class="product-meta">
-            <h3>Sculptural Decor Piece 01</h3>
-            <p>Decor</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/decor/accent-decor-02.jpg" alt="Sculptural Decor Piece 02" />
-          <div class="product-meta">
-            <h3>Sculptural Decor Piece 02</h3>
-            <p>Decor</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/decor/accent-decor-03.jpg" alt="Minimalist Table Vessel" />
-          <div class="product-meta">
-            <h3>Minimalist Table Vessel</h3>
-            <p>Decor</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/decor/accent-decor-05.jpg" alt="Modern Accent Object" />
-          <div class="product-meta">
-            <h3>Modern Accent Object</h3>
-            <p>Decor</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/decor/accent-decor-07.jpg" alt="Artisan Ceramic Sculpture" />
-          <div class="product-meta">
-            <h3>Artisan Ceramic Sculpture</h3>
-            <p>Decor</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="images/decor/accent-decor-08.jpg" alt="Luxury Table Accent" />
-          <div class="product-meta">
-            <h3>Luxury Table Accent</h3>
-            <p>Decor</p>
-          </div>
-        </article>
-
+          <!-- Header Icon -->
+          <a
+            href="https://wa.me/212664106467"
+            target="_blank"
+            aria-label="Chat on WhatsApp"
+            ><i class="ri-whatsapp-line"></i
+          ></a>
+          <p>
+            <i class="ri-time-fill"></i> <strong>Hours:</strong> 10:00 AM – 8:30
+            PM (Saturday to Thursday)
+          </p>
+          <p>
+            <i class="ri-compass-3-fill"></i>
+            <strong>Plus Code:</strong> JXJ4+9C Marrakesh
+          </p>
+          <br />
+          <a
+            href="https://maps.google.com/?cid=4948980861625174462"
+            target="_blank"
+            class="hero-btn"
+            style="background: #0d0d0d; color: #fff"
+            >GET DIRECTIONS ON GOOGLE MAPS</a
+          >
+        </div>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.683!2d-8.0439458!3d31.6309328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafe004bd30613%3A0x44ae4fdf716009be!2sDecoration%20D&#39;interieur!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
       </div>
     </section>
-  </main>
 
-  <!-- Footer Contact Section -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <h3>Get in Touch</h3>
-      <p>Have custom design inquiries or catalog questions? Reach out directly on WhatsApp:</p>
-      <div class="footer-links">
-        <a href="https://wa.me/212664106467" target="_blank" class="footer-wa-card">
-          <span class="wa-icon">💬</span>
-          <div class="wa-text">
-            <strong>Chat with us on WhatsApp</strong>
-            <small>0664106467</small>
-          </div>
-        </a>
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Decoration D'interieur. Hay Hassani, Marrakech. All Rights
+        Reserved.
+      </p>
+    </footer>
+
+    <!-- Sales Pop -->
+    <div class="sales-notification" id="sales-pop">
+      <button
+        class="close-pop"
+        onclick="this.parentElement.style.display = 'none'"
+      >
+        &times;
+      </button>
+      <img
+        src="images/tables/minimalist-walnut-sideboard.jpg"
+        alt="Recent Purchase"
+        class="pop-thumb"
+      />
+      <div class="pop-info">
+        <p class="pop-tagline">Someone purchased a</p>
+        <p class="pop-product">MINIMALIST WALNUT SIDEBOARD</p>
+        <p class="pop-time">12 minutes ago from Marrakech</p>
       </div>
-      <p class="copyright">&copy; 2026 Aziz & Mohamed Interior Atelier. All rights reserved.</p>
     </div>
-  </footer>
 
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
