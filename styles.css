@@ -386,3 +386,33 @@ body {
     font-size: 1.8rem;
   }
 }
+/* Mobile Optimization Fixes */
+@media (max-width: 768px) {
+  /* 1. Fix Huge Header */
+  header.site-header {
+    position: relative; /* Unsticks header on mobile so it doesn't block scrolling */
+    padding: 10px 15px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Horizontal scrollable menu bar */
+    white-space: nowrap;
+    gap: 15px;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-nav ul::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for clean look */
+  }
+
+  /* 2. Fix Cropped Images */
+  .product-card img,
+  .hero-bg {
+    height: 280px;
+    object-fit: contain; /* Prevents cropping, shows full item */
+    background-color: #f9f9f9; /* Subtle backdrop for transparent/padded images */
+  }
+}
