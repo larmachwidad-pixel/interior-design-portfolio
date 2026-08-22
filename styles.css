@@ -375,13 +375,14 @@ body {
   cursor: pointer;
 }
 
+/* Mobile Hero Banner Optimization */
 @media (max-width: 768px) {
-  .top-info-bar {
-    flex-direction: column;
-    gap: 6px;
-    text-align: center;
+  .hero-section {
+    min-height: 50vh; /* Reduces cover height so content below is visible */
+    padding: 60px 15px;
   }
-  .location-container {
-    grid-template-columns: 1fr;
+
+  .hero-title {
+    font-size: 1.8rem;
   }
 }
