@@ -416,3 +416,46 @@ body {
     background-color: #f9f9f9; /* Subtle backdrop for transparent/padded images */
   }
 }
+/* Mobile Optimization & Responsive Fixes */
+@media (max-width: 768px) {
+  /* Prevent Header from Blocking Mobile Screen */
+  header.site-header {
+    position: relative;
+    padding: 10px 15px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 15px;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Compact Product Grid & Image Containment for Phones */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .product-card img {
+    height: 180px;
+    width: 100%;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+
+  .product-info h3 {
+    font-size: 0.9rem;
+    margin: 6px 0 2px;
+  }
+}
